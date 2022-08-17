@@ -1,0 +1,1885 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={How Can a Wellness Technology Company Play It Smart?},
+  pdfauthor={Angela Iao},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{How Can a Wellness Technology Company Play It Smart?}
+\author{Angela Iao}
+\date{Last updated Aug 2022}
+
+\begin{document}
+\maketitle
+
+\hypertarget{scenario}{%
+\section{Scenario}\label{scenario}}
+
+I am a junior data analyst working on the marketing analyst team at
+Bellabeat, a high-tech manufacturer of health-focused products for
+women. Bellabeat is a successful small company, but they have the
+potential to become a larger player in the global smart device market.
+Urška Sršen, co-founder and Chief Creative Officer of Bellabeat,
+believes that analyzing smart device fitness data could help unlock new
+growth opportunities for the company. You have been asked to focus on
+one of Bellabeat's products and analyze smart device data to gain
+insight into how consumers are using their smart devices. The insights
+you discover will then help guide the marketing strategy for the
+company. You will present your analysis to the Bellabeat executive team
+along with your high-level recommendations for Bellabeat's marketing
+strategy.
+
+\hypertarget{products}{%
+\subsection{Products}\label{products}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bellabeat app}: The Bellabeat app provides users with health
+  data related to their activity, sleep, stress, menstrual cycle, and
+  mindfulness habits. This data can help users better understand their
+  current habits and make healthy decisions. The Bellabeat app connects
+  to their line of smart wellness products.
+\item
+  \textbf{Leaf}: Bellabeat's classic wellness tracker can be worn as a
+  bracelet, necklace, or clip. The Leaf tracker connects to the
+  Bellabeat app to track activity, sleep, and stress.
+\item
+  \textbf{Time}: This wellness watch combines the timeless look of a
+  classic timepiece with smart technology to track user activity, sleep,
+  and stress. The Time watch connects to the Bellabeat app to provide
+  you with insights into your daily wellness.
+\item
+  \textbf{Spring}: This is a water bottle that tracks daily water intake
+  using smart technology to ensure that you are appropriately hydrated
+  throughout the day. The Spring bottle connects to the Bellabeat app to
+  track your hydration levels.
+\item
+  \textbf{Bellabeat membership}: Bellabeat also offers a
+  subscription-based membership program for users. Membership gives
+  users 24/7 access to fully personalized guidance on nutrition,
+  activity, sleep, health and beauty, and mindfulness-based on their
+  lifestyle and goals.
+\end{itemize}
+
+\hypertarget{about-bellabeat}{%
+\section{About Bellabeat}\label{about-bellabeat}}
+
+Urška Sršen and Sando Mur founded Bellabeat, a high-tech company that
+manufactures health-focused smart products. Sršen used her background as
+an artist to develop beautifully designed technology that informs and
+inspires women around the world. Collecting data on activity, sleep,
+stress, and reproductive health has allowed Bellabeat to empower women
+with knowledge about their own health and habits. Since it was founded
+in 2013, Bellabeat has grown rapidly and quickly positioned itself as a
+tech-driven wellness company for women. By 2016, Bellabeat had opened
+offices around the world and launched multiple products. Bellabeat
+products became available through a growing number of online retailers
+in addition to their own e-commerce channel on their website. The
+company has invested in traditional advertising media, such as radio,
+out-of-home billboards, print, and television, but focuses on digital
+marketing extensively. Bellabeat invests year-round in Google Search,
+maintains active Facebook and Instagram pages, and consistently engages
+consumers on Twitter. Additionally, Bellabeat runs video ads on Youtube
+and display ads on the Google Display Network to support campaigns
+around key marketing dates.
+
+Sršen knows that an analysis of Bellabeat's available consumer data
+would reveal more opportunities for growth. She has asked the marketing
+analytics team to focus on a Bellabeat product and analyze smart device
+usage data in order to gain insight into how people are already using
+their smart devices. Then, using this information, she would like
+high-level recommendations for how these trends can inform Bellabeat
+marketing strategy.
+
+\hypertarget{ask}{%
+\section{Ask}\label{ask}}
+
+\hypertarget{business-task}{%
+\subsection{Business Task}\label{business-task}}
+
+The \textbf{key business task} is to analyze smart device usage data to
+gain insights into how customers use smart devices. I will apply those
+insights and make data-driven recommendations for the Bellabeat
+marketing analytics team.
+
+\hypertarget{stakeholders}{%
+\subsubsection{Stakeholders}\label{stakeholders}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Urška Sršen}: Bellabeat's co-founder and Chief Creative
+  Officer
+\item
+  \textbf{Sandro Mur}: Mathematician and Bellabeat co-founder; key
+  member of the Bellabeat executive team
+\item
+  \textbf{Bellabeat marketing analytics team}: A team of data analysts
+  responsible for collecting, analyzing, and reporting data that helps
+  guide Bellabeat's marketing strategy. You joined this team six months
+  ago and have been busy learning about Bellabeat's mission and business
+  goals --- as well as how you, as a junior data analyst, can help
+  Bellabeat achieve them.
+\end{itemize}
+
+\hypertarget{prepare}{%
+\section{Prepare}\label{prepare}}
+
+\hypertarget{data-source}{%
+\subsection{Data Source}\label{data-source}}
+
+\textbf{Data source}: \url{https://www.kaggle.com/arashnic/fitbit} (CC0:
+Public Domain, dataset made available through Mobius)
+
+The dataset, FitBit Fitness Tracker Data, consists of 18 CVS files that
+are organized in a long format. The dataset contains personal fitness
+tracker data from 30 Fitbit users, generated from a distributed survey
+via Amazon Mechanical Turk between March 12, 2016, to May 12, 2016. 30
+participants consented to the submission of personal tracker data,
+including minute-level output for physical activity, heart rate, and
+sleep monitoring. It includes information about daily activity, steps,
+and sleep data that can be used to explore users' habits.
+
+\hypertarget{data-integrity}{%
+\subsubsection{Data Integrity}\label{data-integrity}}
+
+Please take into consideration that this dataset has various limitations
+and may not provide reliable insights. Highly recommend finding more
+accurate and reliable data sources.
+
+\hypertarget{limitations}{%
+\paragraph{Limitations}\label{limitations}}
+
+{Reliability} \textbar{} \emph{Low} \textbar{} The dataset is incomplete
+due to the small sample size (n = 30). The data source does not mention
+whether the sample is selected at random, potentially sampling bias.
+
+{Original} \textbar{} \emph{Low} \textbar{} The dataset is generated
+from a survey via Amazon Mechanical Turk, so it may not be accurate.
+
+{Comprehensive} \textbar{} \emph{Low} \textbar{} The data has sufficient
+data, however, the parameters and attributes are undefined and unclear.
+
+{Current} \textbar{} \emph{Low} \textbar{} The survey was done 5 years
+ago in 2016, not representative of present times. The dataset is
+outdated.
+
+\hypertarget{process}{%
+\section{Process}\label{process}}
+
+\hypertarget{dataset-parameters}{%
+\subsection{Dataset Parameters}\label{dataset-parameters}}
+
+There are 18 CSV files in this dataset:
+
+\emph{{Weight}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{weightloginfo} → Id, Date, WeightKg, WeightPounds, Fat, BMI,
+  IsManualReport, LogID
+\end{enumerate}
+
+\emph{{METs (Metabolic Equivalent of Tasks}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{minuteMETsNarrow} → id, ActivityMinute, METs
+\end{enumerate}
+
+\emph{{Steps}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{minuteStepsWide} → id, ActivityHour, StepsNN
+\item
+  \textbf{minuteStepsNarrow} → id, ActivityMinute, Steps
+\item
+  \textbf{hourlySteps} → id, ActivityHour, StepTotal
+\item
+  \textbf{dailySteps} → id, ActivityDay, StepTotal
+\end{enumerate}
+
+\emph{{Sleep}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \textbf{sleepDay} → id, SleepDay, TotalSleepRecords,
+  TotalMinutesAsleep, TotalTimeInBed
+\item
+  \textbf{minuteSleep} → id, date, value, logid
+\end{enumerate}
+
+\emph{{Intensities}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  \textbf{minuteIntensitiesWide} → id, ActivityHour, IntensityNN
+\item
+  \textbf{minuteIntensitiesNarrow} → id, ActivityHour, Intensity
+\item
+  \textbf{hourlyIntensities8} → id, ActivityHour, TotalIntensity,
+  AverageIntensity
+\item
+  \textbf{dailyIntensities} → id, ActivityDay, Sedentary Minutes,
+  LightlyActiveMinutes, FairlyActiveMinutes, VeryActiveMinutes,
+  SedentaryActiveDistance, LightActiveDistance,
+  ModeratelyActiveDistance, VeryActiveDistance
+\end{enumerate}
+
+\emph{{Calories}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  \textbf{minuteCaloriesWide} → Id, ActivityHour, CaloriesNN
+\item
+  \textbf{minuteCaloriesNarrow} → Id, ActivityHour, Calories
+\item
+  \textbf{hourlyCalories} → id, ActivityHour, Calories
+\item
+  \textbf{dailyCalories} → id, ActivityDay, Calories
+\end{enumerate}
+
+\emph{{Heart Rate}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\tightlist
+\item
+  \textbf{heartrate\_seconds} → id, time, value
+\end{enumerate}
+
+\emph{{Activity}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{17}
+\tightlist
+\item
+  \textbf{dailyActivity} → id, ActivityDate, TotalSteps, TotalDistance,
+  TrackerDistance, LoggedActiviesDistance, VeryActiveDistance,
+  ModeratelyActiveDistance, LightActiveDistance,
+  SedentaryActiveDistance, VeryActiveMinutes, FairlyActiveMinutes,
+  LightlyActiveMinutes, SedentaryMinutes, Calories
+\end{enumerate}
+
+\hypertarget{code}{%
+\subsection{Code}\label{code}}
+
+For this report, I will explore how activeness impacts users' sleep
+using R. To analyse that theme, I will analyze data from the following
+data files:
+
+\begin{itemize}
+\tightlist
+\item
+  dailyActivity
+\item
+  dailySteps
+\item
+  sleepDay
+\end{itemize}
+
+\hypertarget{importing-packages}{%
+\subsubsection{Importing Packages}\label{importing-packages}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"tidyverse"}\NormalTok{, }\StringTok{"dplyr"}\NormalTok{, }\StringTok{"tidyr"}\NormalTok{, }\StringTok{"janitor"}\NormalTok{, }\StringTok{"readr"}\NormalTok{, }\StringTok{"skimr"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{), }\AttributeTok{repos =} \StringTok{"http://cran.us.r{-}project.org"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Installing packages into 'C:/Users/Angela/OneDrive/Documents/R/win-library/4.1'
+## (as 'lib' is unspecified)
+\end{verbatim}
+
+\begin{verbatim}
+## package 'tidyverse' successfully unpacked and MD5 sums checked
+## package 'dplyr' successfully unpacked and MD5 sums checked
+## package 'tidyr' successfully unpacked and MD5 sums checked
+## package 'janitor' successfully unpacked and MD5 sums checked
+## package 'readr' successfully unpacked and MD5 sums checked
+## package 'skimr' successfully unpacked and MD5 sums checked
+## package 'ggplot2' successfully unpacked and MD5 sums checked
+## 
+## The downloaded binary packages are in
+##  C:\Users\Angela\AppData\Local\Temp\Rtmpy0xTVR\downloaded_packages
+\end{verbatim}
+
+\hypertarget{loading-packages}{%
+\subsubsection{Loading Packages}\label{loading-packages}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(lubridate)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'lubridate' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'lubridate'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     date, intersect, setdiff, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'dplyr' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'tidyr' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(readr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'readr' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(janitor)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'janitor' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'janitor'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:stats':
+## 
+##     chisq.test, fisher.test
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(skimr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'skimr' was built under R version 4.1.3
+\end{verbatim}
+
+\hypertarget{importing-data}{%
+\subsubsection{Importing Data}\label{importing-data}}
+
+\begin{verbatim}
+## Rows: 940 Columns: 15
+## -- Column specification --------------------------------------------------------
+## Delimiter: ","
+## chr  (1): ActivityDate
+## dbl (14): Id, TotalSteps, TotalDistance, TrackerDistance, LoggedActivitiesDi...
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## Rows: 940 Columns: 3
+## -- Column specification --------------------------------------------------------
+## Delimiter: ","
+## chr (1): ActivityDay
+## dbl (2): Id, StepTotal
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\hypertarget{taking-a-first-look-at-our-data}{%
+\subsubsection{Taking a First Look at Our
+Data}\label{taking-a-first-look-at-our-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#generals to our data}
+\FunctionTok{head}\NormalTok{(dailyActivity)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 15
+##       Id Activ~1 Total~2 Total~3 Track~4 Logge~5 VeryA~6 Moder~7 Light~8 Seden~9
+##    <dbl> <chr>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
+## 1 1.50e9 4/12/2~   13162    8.5     8.5        0    1.88   0.550    6.06       0
+## 2 1.50e9 4/13/2~   10735    6.97    6.97       0    1.57   0.690    4.71       0
+## 3 1.50e9 4/14/2~   10460    6.74    6.74       0    2.44   0.400    3.91       0
+## 4 1.50e9 4/15/2~    9762    6.28    6.28       0    2.14   1.26     2.83       0
+## 5 1.50e9 4/16/2~   12669    8.16    8.16       0    2.71   0.410    5.04       0
+## 6 1.50e9 4/17/2~    9705    6.48    6.48       0    3.19   0.780    2.51       0
+## # ... with 5 more variables: VeryActiveMinutes <dbl>,
+## #   FairlyActiveMinutes <dbl>, LightlyActiveMinutes <dbl>,
+## #   SedentaryMinutes <dbl>, Calories <dbl>, and abbreviated variable names
+## #   1: ActivityDate, 2: TotalSteps, 3: TotalDistance, 4: TrackerDistance,
+## #   5: LoggedActivitiesDistance, 6: VeryActiveDistance,
+## #   7: ModeratelyActiveDistance, 8: LightActiveDistance,
+## #   9: SedentaryActiveDistance
+## # i Use `colnames()` to see all variable names
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{skim\_without\_charts}\NormalTok{(dailyActivity) }\CommentTok{\#no missing values}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{Data summary}\tabularnewline
+\toprule
+& \\
+\midrule
+\endfirsthead
+\toprule
+& \\
+\midrule
+\endhead
+Name & dailyActivity \\
+Number of rows & 940 \\
+Number of columns & 15 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Column type frequency: & \\
+character & 1 \\
+numeric & 14 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Group variables & None \\
+\bottomrule
+\end{longtable}
+
+\textbf{Variable type: character}
+
+\begin{longtable}[]{@{}lrrrrrrr@{}}
+\toprule
+skim\_variable & n\_missing & complete\_rate & min & max & empty &
+n\_unique & whitespace \\
+\midrule
+\endhead
+ActivityDate & 0 & 1 & 8 & 9 & 0 & 31 & 0 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Variable type: numeric}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.18}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.07}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.10}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.08}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}@{}}
+\toprule
+skim\_variable & n\_missing & complete\_rate & mean & sd & p0 & p25 &
+p50 & p75 & p100 \\
+\midrule
+\endhead
+Id & 0 & 1 & 4.855407e+09 & 2.424805e+09 & 1503960366 & 2.320127e+09 &
+4.445115e+09 & 6.962181e+09 & 8.877689e+09 \\
+TotalSteps & 0 & 1 & 7.637910e+03 & 5.087150e+03 & 0 & 3.789750e+03 &
+7.405500e+03 & 1.072700e+04 & 3.601900e+04 \\
+TotalDistance & 0 & 1 & 5.490000e+00 & 3.920000e+00 & 0 & 2.620000e+00 &
+5.240000e+00 & 7.710000e+00 & 2.803000e+01 \\
+TrackerDistance & 0 & 1 & 5.480000e+00 & 3.910000e+00 & 0 & 2.620000e+00
+& 5.240000e+00 & 7.710000e+00 & 2.803000e+01 \\
+LoggedActivitiesDistance & 0 & 1 & 1.100000e-01 & 6.200000e-01 & 0 &
+0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 4.940000e+00 \\
+VeryActiveDistance & 0 & 1 & 1.500000e+00 & 2.660000e+00 & 0 &
+0.000000e+00 & 2.100000e-01 & 2.050000e+00 & 2.192000e+01 \\
+ModeratelyActiveDistance & 0 & 1 & 5.700000e-01 & 8.800000e-01 & 0 &
+0.000000e+00 & 2.400000e-01 & 8.000000e-01 & 6.480000e+00 \\
+LightActiveDistance & 0 & 1 & 3.340000e+00 & 2.040000e+00 & 0 &
+1.950000e+00 & 3.360000e+00 & 4.780000e+00 & 1.071000e+01 \\
+SedentaryActiveDistance & 0 & 1 & 0.000000e+00 & 1.000000e-02 & 0 &
+0.000000e+00 & 0.000000e+00 & 0.000000e+00 & 1.100000e-01 \\
+VeryActiveMinutes & 0 & 1 & 2.116000e+01 & 3.284000e+01 & 0 &
+0.000000e+00 & 4.000000e+00 & 3.200000e+01 & 2.100000e+02 \\
+FairlyActiveMinutes & 0 & 1 & 1.356000e+01 & 1.999000e+01 & 0 &
+0.000000e+00 & 6.000000e+00 & 1.900000e+01 & 1.430000e+02 \\
+LightlyActiveMinutes & 0 & 1 & 1.928100e+02 & 1.091700e+02 & 0 &
+1.270000e+02 & 1.990000e+02 & 2.640000e+02 & 5.180000e+02 \\
+SedentaryMinutes & 0 & 1 & 9.912100e+02 & 3.012700e+02 & 0 &
+7.297500e+02 & 1.057500e+03 & 1.229500e+03 & 1.440000e+03 \\
+Calories & 0 & 1 & 2.303610e+03 & 7.181700e+02 & 0 & 1.828500e+03 &
+2.134000e+03 & 2.793250e+03 & 4.900000e+03 \\
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{str}\NormalTok{(dailyActivity)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## spec_tbl_df [940 x 15] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+##  $ Id                      : num [1:940] 1.5e+09 1.5e+09 1.5e+09 1.5e+09 1.5e+09 ...
+##  $ ActivityDate            : chr [1:940] "4/12/2016" "4/13/2016" "4/14/2016" "4/15/2016" ...
+##  $ TotalSteps              : num [1:940] 13162 10735 10460 9762 12669 ...
+##  $ TotalDistance           : num [1:940] 8.5 6.97 6.74 6.28 8.16 ...
+##  $ TrackerDistance         : num [1:940] 8.5 6.97 6.74 6.28 8.16 ...
+##  $ LoggedActivitiesDistance: num [1:940] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ VeryActiveDistance      : num [1:940] 1.88 1.57 2.44 2.14 2.71 ...
+##  $ ModeratelyActiveDistance: num [1:940] 0.55 0.69 0.4 1.26 0.41 ...
+##  $ LightActiveDistance     : num [1:940] 6.06 4.71 3.91 2.83 5.04 ...
+##  $ SedentaryActiveDistance : num [1:940] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ VeryActiveMinutes       : num [1:940] 25 21 30 29 36 38 42 50 28 19 ...
+##  $ FairlyActiveMinutes     : num [1:940] 13 19 11 34 10 20 16 31 12 8 ...
+##  $ LightlyActiveMinutes    : num [1:940] 328 217 181 209 221 164 233 264 205 211 ...
+##  $ SedentaryMinutes        : num [1:940] 728 776 1218 726 773 ...
+##  $ Calories                : num [1:940] 1985 1797 1776 1745 1863 ...
+##  - attr(*, "spec")=
+##   .. cols(
+##   ..   Id = col_double(),
+##   ..   ActivityDate = col_character(),
+##   ..   TotalSteps = col_double(),
+##   ..   TotalDistance = col_double(),
+##   ..   TrackerDistance = col_double(),
+##   ..   LoggedActivitiesDistance = col_double(),
+##   ..   VeryActiveDistance = col_double(),
+##   ..   ModeratelyActiveDistance = col_double(),
+##   ..   LightActiveDistance = col_double(),
+##   ..   SedentaryActiveDistance = col_double(),
+##   ..   VeryActiveMinutes = col_double(),
+##   ..   FairlyActiveMinutes = col_double(),
+##   ..   LightlyActiveMinutes = col_double(),
+##   ..   SedentaryMinutes = col_double(),
+##   ..   Calories = col_double()
+##   .. )
+##  - attr(*, "problems")=<externalptr>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(dailySteps)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 3
+##           Id ActivityDay StepTotal
+##        <dbl> <chr>           <dbl>
+## 1 1503960366 4/12/2016       13162
+## 2 1503960366 4/13/2016       10735
+## 3 1503960366 4/14/2016       10460
+## 4 1503960366 4/15/2016        9762
+## 5 1503960366 4/16/2016       12669
+## 6 1503960366 4/17/2016        9705
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{skim\_without\_charts}\NormalTok{(dailySteps) }\CommentTok{\#no missing values}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{Data summary}\tabularnewline
+\toprule
+& \\
+\midrule
+\endfirsthead
+\toprule
+& \\
+\midrule
+\endhead
+Name & dailySteps \\
+Number of rows & 940 \\
+Number of columns & 3 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Column type frequency: & \\
+character & 1 \\
+numeric & 2 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Group variables & None \\
+\bottomrule
+\end{longtable}
+
+\textbf{Variable type: character}
+
+\begin{longtable}[]{@{}lrrrrrrr@{}}
+\toprule
+skim\_variable & n\_missing & complete\_rate & min & max & empty &
+n\_unique & whitespace \\
+\midrule
+\endhead
+ActivityDay & 0 & 1 & 8 & 9 & 0 & 31 & 0 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Variable type: numeric}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.08}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}@{}}
+\toprule
+skim\_variable & n\_missing & complete\_rate & mean & sd & p0 & p25 &
+p50 & p75 & p100 \\
+\midrule
+\endhead
+Id & 0 & 1 & 4.855407e+09 & 2.424805e+09 & 1503960366 & 2.320127e+09 &
+4445114986.0 & 6962181067 & 8877689391 \\
+StepTotal & 0 & 1 & 7.637910e+03 & 5.087150e+03 & 0 & 3.789750e+03 &
+7405.5 & 10727 & 36019 \\
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{str}\NormalTok{(dailySteps)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## spec_tbl_df [940 x 3] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+##  $ Id         : num [1:940] 1.5e+09 1.5e+09 1.5e+09 1.5e+09 1.5e+09 ...
+##  $ ActivityDay: chr [1:940] "4/12/2016" "4/13/2016" "4/14/2016" "4/15/2016" ...
+##  $ StepTotal  : num [1:940] 13162 10735 10460 9762 12669 ...
+##  - attr(*, "spec")=
+##   .. cols(
+##   ..   Id = col_double(),
+##   ..   ActivityDay = col_character(),
+##   ..   StepTotal = col_double()
+##   .. )
+##  - attr(*, "problems")=<externalptr>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(sleepDay)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##           Id              SleepDay TotalSleepRecords TotalMinutesAsleep
+## 1 1503960366 4/12/2016 12:00:00 AM                 1                327
+## 2 1503960366 4/13/2016 12:00:00 AM                 2                384
+## 3 1503960366 4/15/2016 12:00:00 AM                 1                412
+## 4 1503960366 4/16/2016 12:00:00 AM                 2                340
+## 5 1503960366 4/17/2016 12:00:00 AM                 1                700
+## 6 1503960366 4/19/2016 12:00:00 AM                 1                304
+##   TotalTimeInBed
+## 1            346
+## 2            407
+## 3            442
+## 4            367
+## 5            712
+## 6            320
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{skim\_without\_charts}\NormalTok{(sleepDay) }\CommentTok{\#no missing values}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{Data summary}\tabularnewline
+\toprule
+& \\
+\midrule
+\endfirsthead
+\toprule
+& \\
+\midrule
+\endhead
+Name & sleepDay \\
+Number of rows & 413 \\
+Number of columns & 5 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Column type frequency: & \\
+character & 1 \\
+numeric & 4 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Group variables & None \\
+\bottomrule
+\end{longtable}
+
+\textbf{Variable type: character}
+
+\begin{longtable}[]{@{}lrrrrrrr@{}}
+\toprule
+skim\_variable & n\_missing & complete\_rate & min & max & empty &
+n\_unique & whitespace \\
+\midrule
+\endhead
+SleepDay & 0 & 1 & 20 & 21 & 0 & 31 & 0 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Variable type: numeric}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.15}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.08}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.11}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.10}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 18\tabcolsep) * \real{0.09}}@{}}
+\toprule
+skim\_variable & n\_missing & complete\_rate & mean & sd & p0 & p25 &
+p50 & p75 & p100 \\
+\midrule
+\endhead
+Id & 0 & 1 & 5.000979e+09 & 2.06036e+09 & 1503960366 & 3977333714 &
+4702921684 & 6962181067 & 8792009665 \\
+TotalSleepRecords & 0 & 1 & 1.120000e+00 & 3.50000e-01 & 1 & 1 & 1 & 1 &
+3 \\
+TotalMinutesAsleep & 0 & 1 & 4.194700e+02 & 1.18340e+02 & 58 & 361 & 433
+& 490 & 796 \\
+TotalTimeInBed & 0 & 1 & 4.586400e+02 & 1.27100e+02 & 61 & 403 & 463 &
+526 & 961 \\
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{str}\NormalTok{(sleepDay)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    413 obs. of  5 variables:
+##  $ Id                : num  1.5e+09 1.5e+09 1.5e+09 1.5e+09 1.5e+09 ...
+##  $ SleepDay          : chr  "4/12/2016 12:00:00 AM" "4/13/2016 12:00:00 AM" "4/15/2016 12:00:00 AM" "4/16/2016 12:00:00 AM" ...
+##  $ TotalSleepRecords : int  1 2 1 2 1 1 1 1 1 1 ...
+##  $ TotalMinutesAsleep: int  327 384 412 340 700 304 360 325 361 430 ...
+##  $ TotalTimeInBed    : int  346 407 442 367 712 320 377 364 384 449 ...
+\end{verbatim}
+
+\hypertarget{cleaning-the-dataset}{%
+\subsubsection{Cleaning the Dataset}\label{cleaning-the-dataset}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Cleaning{-} formatting dates from string to date and correcting data types}
+\CommentTok{\#Cleaning{-} adding another column \textquotesingle{}Date\textquotesingle{} for activity and sleep so that I can merge later}
+\NormalTok{activity }\OtherTok{\textless{}{-}}\NormalTok{ dailyActivity }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{ActivityDate =} \FunctionTok{mdy}\NormalTok{(ActivityDate)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{TotalSteps =} \FunctionTok{as.integer}\NormalTok{(TotalSteps)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Date =}\NormalTok{ ActivityDate)}
+
+\NormalTok{sleep }\OtherTok{\textless{}{-}}\NormalTok{ sleepDay }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{SleepDay =} \FunctionTok{mdy\_hms}\NormalTok{(SleepDay)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{TotalMinutesAsleep =} \FunctionTok{as.numeric}\NormalTok{(TotalMinutesAsleep)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{TotalTimeInBed =} \FunctionTok{as.numeric}\NormalTok{(TotalTimeInBed)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Date =}\NormalTok{ SleepDay)}
+
+\NormalTok{steps }\OtherTok{\textless{}{-}}\NormalTok{ dailySteps }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{ActivityDay =} \FunctionTok{mdy}\NormalTok{(ActivityDay)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Date =}\NormalTok{ ActivityDay)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exploring-data}{%
+\subsubsection{Exploring Data}\label{exploring-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{activity }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(TotalSteps, VeryActiveMinutes, FairlyActiveMinutes, }
+\NormalTok{         LightlyActiveMinutes, SedentaryMinutes) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summary}\NormalTok{(activity)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    TotalSteps    VeryActiveMinutes FairlyActiveMinutes LightlyActiveMinutes
+##  Min.   :    0   Min.   :  0.00    Min.   :  0.00      Min.   :  0.0       
+##  1st Qu.: 3790   1st Qu.:  0.00    1st Qu.:  0.00      1st Qu.:127.0       
+##  Median : 7406   Median :  4.00    Median :  6.00      Median :199.0       
+##  Mean   : 7638   Mean   : 21.16    Mean   : 13.56      Mean   :192.8       
+##  3rd Qu.:10727   3rd Qu.: 32.00    3rd Qu.: 19.00      3rd Qu.:264.0       
+##  Max.   :36019   Max.   :210.00    Max.   :143.00      Max.   :518.0       
+##  SedentaryMinutes
+##  Min.   :   0.0  
+##  1st Qu.: 729.8  
+##  Median :1057.5  
+##  Mean   : 991.2  
+##  3rd Qu.:1229.5  
+##  Max.   :1440.0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sleep }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(Date, TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summary}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       Date                     TotalSleepRecords TotalMinutesAsleep
+##  Min.   :2016-04-12 00:00:00   Min.   :1.000     Min.   : 58.0     
+##  1st Qu.:2016-04-19 00:00:00   1st Qu.:1.000     1st Qu.:361.0     
+##  Median :2016-04-27 00:00:00   Median :1.000     Median :433.0     
+##  Mean   :2016-04-26 12:40:05   Mean   :1.119     Mean   :419.5     
+##  3rd Qu.:2016-05-04 00:00:00   3rd Qu.:1.000     3rd Qu.:490.0     
+##  Max.   :2016-05-12 00:00:00   Max.   :3.000     Max.   :796.0     
+##  TotalTimeInBed 
+##  Min.   : 61.0  
+##  1st Qu.:403.0  
+##  Median :463.0  
+##  Mean   :458.6  
+##  3rd Qu.:526.0  
+##  Max.   :961.0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{steps }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(StepTotal) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summary}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    StepTotal    
+##  Min.   :    0  
+##  1st Qu.: 3790  
+##  Median : 7406  
+##  Mean   : 7638  
+##  3rd Qu.:10727  
+##  Max.   :36019
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Exploring{-} distinct users in each data file}
+\NormalTok{users\_activity }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(dailyActivity}\SpecialCharTok{$}\NormalTok{Id)}
+\FunctionTok{length}\NormalTok{(users\_activity) }\CommentTok{\#33}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 33
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{users\_steps }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(dailySteps}\SpecialCharTok{$}\NormalTok{Id)}
+\FunctionTok{length}\NormalTok{(users\_steps) }\CommentTok{\#33}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 33
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{users\_sleep }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(sleepDay}\SpecialCharTok{$}\NormalTok{Id)}
+\FunctionTok{length}\NormalTok{(users\_sleep) }\CommentTok{\#24}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 24
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Exploring{-} counting number of entries}
+\FunctionTok{nrow}\NormalTok{(sleep) }\CommentTok{\#413}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 413
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{nrow}\NormalTok{(activity) }\CommentTok{\#940}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 940
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Exploring{-} how many times each user logged in}
+\NormalTok{sleepDay }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{count}\NormalTok{(Id)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##            Id  n
+## 1  1503960366 25
+## 2  1644430081  4
+## 3  1844505072  3
+## 4  1927972279  5
+## 5  2026352035 28
+## 6  2320127002  1
+## 7  2347167796 15
+## 8  3977333714 28
+## 9  4020332650  8
+## 10 4319703577 26
+## 11 4388161847 24
+## 12 4445114986 28
+## 13 4558609924  5
+## 14 4702921684 28
+## 15 5553957443 31
+## 16 5577150313 26
+## 17 6117666160 18
+## 18 6775888955  3
+## 19 6962181067 31
+## 20 7007744171  2
+## 21 7086361926 24
+## 22 8053475328  3
+## 23 8378563200 32
+## 24 8792009665 15
+\end{verbatim}
+
+\hypertarget{analyze}{%
+\section{Analyze}\label{analyze}}
+
+Looking more deeply into these variables:
+
+\begin{itemize}
+\tightlist
+\item
+  TotalSteps (steps users take per day)
+\item
+  SedentaryMinutes (minutes users stay sedentary per day (i.e.~sitting
+  and lying down))
+\item
+  TotalMinutesSleep (minutes users are sleeping per day)
+\item
+  TotalTimeInBed (minutes users are in bed)
+\item
+  Activity Level (very active, fairly active, lightly active, sedentary)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    StepsActivityLevel (categorize users' activity levels according to
+    recommended steps per day
+    \href{https://www.medicinenet.com/how_many_steps_a_day_is_considered_active/article.htm}{1})
+  \item
+    ActivityLevelMins (categorize users by activity levels according to
+    users daily activity minutes)
+  \end{itemize}
+\item
+  SleepSufficiency (categorize whether users had enough sleep (at least
+  420 minutes or 7 hours
+  \href{https://www.sleepfoundation.org/sleep-hygiene/what-is-healthy-sleep}{2})
+  or not enough sleep (less than 420 minutes or 7 hours)
+\item
+  AwakeInBed (minutes that users are in bed but not asleep)
+\end{itemize}
+
+\hypertarget{code-1}{%
+\subsection{Code}\label{code-1}}
+
+\hypertarget{merging-data}{%
+\subsubsection{Merging Data}\label{merging-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Merging activity and sleep in a df by \textquotesingle{}Id\textquotesingle{} and \textquotesingle{}Date\textquotesingle{}, excluding columns I don\textquotesingle{}t need}
+\NormalTok{sleep\_activity }\OtherTok{\textless{}{-}} \FunctionTok{merge}\NormalTok{(sleep, activity, }\AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Id\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Date\textquotesingle{}}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(TotalDistance, TrackerDistance, LoggedActivitiesDistance, }
+\NormalTok{            VeryActiveDistance, ModeratelyActiveDistance, LightActiveDistance, SedentaryActiveDistance))}
+\FunctionTok{View}\NormalTok{(sleep\_activity)}
+
+\CommentTok{\#filtering out the data that captured sedentary minutes of 1440 mins (24 hrs)}
+\NormalTok{sleep\_activity\_cleaned }\OtherTok{\textless{}{-}}\NormalTok{ sleep\_activity }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(SedentaryMinutes }\SpecialCharTok{!=} \DecValTok{1440}\NormalTok{)}
+
+\CommentTok{\#filtered out the data that was tracked when user was not using it}
+\NormalTok{sleep\_activity\_cleaned }\OtherTok{\textless{}{-}}\NormalTok{ sleep\_activity }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(SedentaryMinutes }\SpecialCharTok{!=} \DecValTok{1440}\NormalTok{)}
+\FunctionTok{summary}\NormalTok{(sleep\_activity\_cleaned)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        Id                 Date                    
+##  Min.   :1.504e+09   Min.   :2016-04-12 00:00:00  
+##  1st Qu.:3.977e+09   1st Qu.:2016-04-19 00:00:00  
+##  Median :4.703e+09   Median :2016-04-27 00:00:00  
+##  Mean   :5.001e+09   Mean   :2016-04-26 12:40:05  
+##  3rd Qu.:6.962e+09   3rd Qu.:2016-05-04 00:00:00  
+##  Max.   :8.792e+09   Max.   :2016-05-12 00:00:00  
+##     SleepDay                   TotalSleepRecords TotalMinutesAsleep
+##  Min.   :2016-04-12 00:00:00   Min.   :1.000     Min.   : 58.0     
+##  1st Qu.:2016-04-19 00:00:00   1st Qu.:1.000     1st Qu.:361.0     
+##  Median :2016-04-27 00:00:00   Median :1.000     Median :433.0     
+##  Mean   :2016-04-26 12:40:05   Mean   :1.119     Mean   :419.5     
+##  3rd Qu.:2016-05-04 00:00:00   3rd Qu.:1.000     3rd Qu.:490.0     
+##  Max.   :2016-05-12 00:00:00   Max.   :3.000     Max.   :796.0     
+##  TotalTimeInBed   ActivityDate          TotalSteps    VeryActiveMinutes
+##  Min.   : 61.0   Min.   :2016-04-12   Min.   :   17   Min.   :  0.00   
+##  1st Qu.:403.0   1st Qu.:2016-04-19   1st Qu.: 5206   1st Qu.:  0.00   
+##  Median :463.0   Median :2016-04-27   Median : 8925   Median :  9.00   
+##  Mean   :458.6   Mean   :2016-04-26   Mean   : 8541   Mean   : 25.19   
+##  3rd Qu.:526.0   3rd Qu.:2016-05-04   3rd Qu.:11393   3rd Qu.: 38.00   
+##  Max.   :961.0   Max.   :2016-05-12   Max.   :22770   Max.   :210.00   
+##  FairlyActiveMinutes LightlyActiveMinutes SedentaryMinutes    Calories   
+##  Min.   :  0.00      Min.   :  2.0        Min.   :   0.0   Min.   : 257  
+##  1st Qu.:  0.00      1st Qu.:158.0        1st Qu.: 631.0   1st Qu.:1850  
+##  Median : 11.00      Median :208.0        Median : 717.0   Median :2220  
+##  Mean   : 18.04      Mean   :216.9        Mean   : 712.2   Mean   :2398  
+##  3rd Qu.: 27.00      3rd Qu.:263.0        3rd Qu.: 783.0   3rd Qu.:2926  
+##  Max.   :143.00      Max.   :518.0        Max.   :1265.0   Max.   :4900
+\end{verbatim}
+
+The mean for sedentary minutes and total steps are below average for the
+recommended level for healthy adults. For sedentary minutes, the average
+time users have been sedentary is 717 minutes per day, almost 12 hours
+which is considered a high average. The mean for total steps is 8541
+which is considered low for the recommended at least 10,000 steps per
+day.
+\href{https://ijbnpa.biomedcentral.com/articles/10.1186/1479-5868-8-79\#:~:text=In\%20summary\%2C\%20at\%20least\%20in,populace\%20\%5B3\%2C\%2023\%5D.}{3}
+
+\hypertarget{analyzing-data}{%
+\subsubsection{Analyzing Data}\label{analyzing-data}}
+
+On average, how many users are active? (at least 10k steps a day)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{avg\_steps }\OtherTok{\textless{}{-}}\NormalTok{ sleep\_activity\_cleaned }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{group\_by}\NormalTok{(Id) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{AverageSteps =} \FunctionTok{mean}\NormalTok{(TotalSteps, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{))}
+
+\NormalTok{active\_users\_steps }\OtherTok{\textless{}{-}} \FunctionTok{filter}\NormalTok{(avg\_steps, AverageSteps }\SpecialCharTok{\textgreater{}=} \DecValTok{10000}\NormalTok{)}
+\FunctionTok{count}\NormalTok{(active\_users\_steps) }\CommentTok{\#5}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 1
+##       n
+##   <int>
+## 1     5
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{active\_users\_steps\_percent }\OtherTok{\textless{}{-}} \FunctionTok{nrow}\NormalTok{(active\_users\_steps)}\SpecialCharTok{/}\FunctionTok{nrow}\NormalTok{(avg\_steps)}\SpecialCharTok{*}\DecValTok{100}
+\FunctionTok{print}\NormalTok{(active\_users\_steps\_percent ) }\CommentTok{\#20.83\%}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 20.83333
+\end{verbatim}
+
+5 out of 24 or around 21\% of smart device users are considered active
+or walk at least 10,000 steps a day. That is a relatively low number,
+considering that smart device trackers are meant to measure users'
+activity and health to motivate users towards their fitness goals.
+
+How many users are sedentary? (less than 5k steps a day)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sedentary\_users\_steps }\OtherTok{\textless{}{-}} \FunctionTok{filter}\NormalTok{(avg\_steps, AverageSteps }\SpecialCharTok{\textless{}} \DecValTok{5000}\NormalTok{)}
+\FunctionTok{count}\NormalTok{(sedentary\_users\_steps) }\CommentTok{\#5}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 1
+##       n
+##   <int>
+## 1     5
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sedentary\_users\_steps\_percent }\OtherTok{\textless{}{-}} \FunctionTok{nrow}\NormalTok{(sedentary\_users\_steps)}\SpecialCharTok{/}\FunctionTok{nrow}\NormalTok{(avg\_steps)}\SpecialCharTok{*}\DecValTok{100}
+\FunctionTok{print}\NormalTok{(sedentary\_users\_steps\_percent) }\CommentTok{\#20.83\%}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 20.83333
+\end{verbatim}
+
+5 out of 33 or around 21\% of users are considered sedentary or
+inactive, meaning they walk less than 5,000 steps per day. That is a
+relatively low number which is good because we want to encourage more
+exercise and activeness.
+
+On average, how many users are healthy sleepers? (at least 420 minutes a
+night)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{avg\_sleep\_minutes }\OtherTok{\textless{}{-}}\NormalTok{ sleep\_activity\_cleaned }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{group\_by}\NormalTok{(Id) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{AverageSleepMinutes =} \FunctionTok{mean}\NormalTok{(TotalMinutesAsleep, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{))}
+\FunctionTok{summary}\NormalTok{(avg\_sleep\_minutes}\SpecialCharTok{$}\NormalTok{AverageSleepMinutes) }\CommentTok{\#377.6 or 6.29 hrs}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    61.0   336.3   419.1   377.6   449.3   652.0
+\end{verbatim}
+
+On average, users sleep for 377.6 minutes or 6.29 hours. That average
+falls below the recommended level of 420 minutes or 7 hours
+\href{https://www.sleepfoundation.org/sleep-hygiene/what-is-healthy-sleep}{2}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#create new columns in sleep\_activity\_cleaned df}
+\NormalTok{sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{TotalLoggedMinutes }\OtherTok{=}\NormalTok{ sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{TotalTimeInBed }\SpecialCharTok{+} 
+\NormalTok{  sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{VeryActiveMinutes }\SpecialCharTok{+} 
+\NormalTok{  sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{FairlyActiveMinutes }\SpecialCharTok{+} 
+\NormalTok{  sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{LightlyActiveMinutes }\SpecialCharTok{+} 
+\NormalTok{  sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{SedentaryMinutes}
+
+\NormalTok{sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{TotalActiveMinutes }\OtherTok{=}\NormalTok{ sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{VeryActiveMinutes }\SpecialCharTok{+} 
+\NormalTok{  sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{FairlyActiveMinutes }\SpecialCharTok{+} 
+\NormalTok{  sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{LightlyActiveMinutes}
+
+
+\CommentTok{\#creating new column to categorize the activity level of users based on steps and determine whether they had sufficient sleep}
+\NormalTok{sleep\_steps }\OtherTok{\textless{}{-}}\NormalTok{ sleep\_activity\_cleaned }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{StepsActivityLevel =} \FunctionTok{case\_when}\NormalTok{(}
+\NormalTok{    TotalSteps }\SpecialCharTok{\textless{}} \DecValTok{5000} \SpecialCharTok{\textasciitilde{}} \StringTok{"Inactive"}\NormalTok{, }
+\NormalTok{    TotalSteps }\SpecialCharTok{\textgreater{}=} \DecValTok{5000} \SpecialCharTok{\&}\NormalTok{ TotalSteps }\SpecialCharTok{\textless{}} \DecValTok{8750} \SpecialCharTok{\textasciitilde{}} \StringTok{"Lightly Active"}\NormalTok{, }
+\NormalTok{    TotalSteps }\SpecialCharTok{\textgreater{}=} \DecValTok{8750} \SpecialCharTok{\&}\NormalTok{ TotalSteps }\SpecialCharTok{\textless{}} \DecValTok{12500} \SpecialCharTok{\textasciitilde{}} \StringTok{"Fairly Active"}\NormalTok{, }
+\NormalTok{    TotalSteps }\SpecialCharTok{\textgreater{}=} \DecValTok{12500} \SpecialCharTok{\textasciitilde{}} \StringTok{"Very Active"}
+\NormalTok{  ), }\AttributeTok{SleepSufficiency =} \FunctionTok{case\_when}\NormalTok{(}
+\NormalTok{    TotalMinutesAsleep }\SpecialCharTok{\textless{}} \DecValTok{420} \SpecialCharTok{\textasciitilde{}} \StringTok{"Not Enough"}\NormalTok{,}
+\NormalTok{    TotalMinutesAsleep }\SpecialCharTok{\textgreater{}=} \DecValTok{420} \SpecialCharTok{\textasciitilde{}} \StringTok{"Enough"}
+\NormalTok{  ))}
+
+
+\CommentTok{\#Analyzing{-} correlation b/w SedentaryMinutes and TotalMinutesAsleep}
+\FunctionTok{cor}\NormalTok{(sleep\_steps}\SpecialCharTok{$}\NormalTok{SedentaryMinutes, sleep\_steps}\SpecialCharTok{$}\NormalTok{TotalMinutesAsleep) }\CommentTok{\#{-}0.599394}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] -0.599394
+\end{verbatim}
+
+The correlation between SedentaryMinutes and TotalMinutesAsleep is
+-0.599394 or -0.6, which is considered to be a moderately strong
+negative correlation. {[}go to Figure 5{]}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Analyzing{-} counting how many observations in EnoughSleep}
+\NormalTok{sleep\_steps }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{count}\NormalTok{(SleepSufficiency) }\CommentTok{\#Enough{-} 231 observations; Not Enough{-} 182 observations}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   SleepSufficiency   n
+## 1           Enough 231
+## 2       Not Enough 182
+\end{verbatim}
+
+There are 231 observations (55.9\%) that were categorized as `Enough'
+sleep, meaning users had at least 420 minutes of sleep that day. There
+are 182 observations (44.1\%) that were categorized as `Not Enough'
+sleep, meaning users had less than 420 minutes of sleep that day. This
+result is relatively consistent with our previous analysis of healthy
+sleep users and sleep minutes. {[}go to Figure 3{]}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Analyzing{-} creating new column to categorize the activity level (based on activity minutes)}
+\FunctionTok{mean}\NormalTok{(sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{SedentaryMinutes) }\CommentTok{\# 712.1695}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 712.1695
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{LightlyActiveMinutes) }\CommentTok{\# 216.8547}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 216.8547
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{FairlyActiveMinutes) }\CommentTok{\# 18.03874}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 18.03874
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(sleep\_activity\_cleaned}\SpecialCharTok{$}\NormalTok{VeryActiveMinutes) }\CommentTok{\# 25.18886}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 25.18886
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sleep\_activity\_mins }\OtherTok{\textless{}{-}}\NormalTok{ sleep\_steps }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{group\_by}\NormalTok{(Id) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{AwakeInBed =}\NormalTok{ TotalTimeInBed }\SpecialCharTok{{-}}\NormalTok{ TotalMinutesAsleep, }
+         \AttributeTok{ActivityLevelMins =} \FunctionTok{case\_when}\NormalTok{(}
+\NormalTok{           SedentaryMinutes }\SpecialCharTok{\textgreater{}} \FloatTok{712.1965} \SpecialCharTok{\&}
+\NormalTok{             LightlyActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{216.8547} \SpecialCharTok{\&} 
+\NormalTok{             FairlyActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{18.03874} \SpecialCharTok{\&}
+\NormalTok{             VeryActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{25.18886} \SpecialCharTok{\textasciitilde{}} \StringTok{"Inactive"}\NormalTok{,}
+\NormalTok{           SedentaryMinutes }\SpecialCharTok{\textless{}} \FloatTok{712.1965} \SpecialCharTok{\&}
+\NormalTok{             LightlyActiveMinutes }\SpecialCharTok{\textgreater{}} \FloatTok{216.8547} \SpecialCharTok{\&} 
+\NormalTok{             FairlyActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{18.03874} \SpecialCharTok{\&}
+\NormalTok{             VeryActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{25.18886} \SpecialCharTok{\textasciitilde{}} \StringTok{"Lightly Active"}\NormalTok{,}
+\NormalTok{           SedentaryMinutes }\SpecialCharTok{\textless{}} \FloatTok{712.1965} \SpecialCharTok{\&}
+\NormalTok{             LightlyActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{216.8547} \SpecialCharTok{\&} 
+\NormalTok{             FairlyActiveMinutes }\SpecialCharTok{\textgreater{}} \FloatTok{18.03874} \SpecialCharTok{\&}
+\NormalTok{             VeryActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{25.18886} \SpecialCharTok{\textasciitilde{}} \StringTok{"Fairly Active"}\NormalTok{,}
+\NormalTok{           SedentaryMinutes }\SpecialCharTok{\textless{}} \FloatTok{712.1965} \SpecialCharTok{\&}
+\NormalTok{             LightlyActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{216.8547} \SpecialCharTok{\&}
+\NormalTok{             FairlyActiveMinutes }\SpecialCharTok{\textless{}} \FloatTok{18.03874} \SpecialCharTok{\&} 
+\NormalTok{             VeryActiveMinutes }\SpecialCharTok{\textgreater{}} \FloatTok{25.18886} \SpecialCharTok{\textasciitilde{}} \StringTok{"Very Active"}\NormalTok{), }
+         \AttributeTok{SleepSufficiency =} \FunctionTok{case\_when}\NormalTok{(}
+\NormalTok{           TotalMinutesAsleep }\SpecialCharTok{\textless{}} \DecValTok{420} \SpecialCharTok{\textasciitilde{}} \StringTok{"Not Enough"}\NormalTok{,}
+\NormalTok{           TotalMinutesAsleep }\SpecialCharTok{\textgreater{}=} \DecValTok{420} \SpecialCharTok{\textasciitilde{}} \StringTok{"Enough"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{drop\_na}\NormalTok{()}
+
+
+\CommentTok{\#Analyzing{-} correlation b/w AwakeInBed and TotalMinutesAsleep}
+\FunctionTok{cor}\NormalTok{(sleep\_activity\_mins}\SpecialCharTok{$}\NormalTok{AwakeInBed, sleep\_activity\_mins}\SpecialCharTok{$}\NormalTok{TotalMinutesAsleep) }\CommentTok{\#{-}0.1385993}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] -0.1385993
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#On average, how long does it take users to sleep?}
+\FunctionTok{mean}\NormalTok{(sleep\_activity\_mins}\SpecialCharTok{$}\NormalTok{AwakeInBed) }\CommentTok{\#38.83 mins}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 38.82993
+\end{verbatim}
+
+\emph{{Note: The number of rows in this data has dropped in comparison
+to sleep\_steps data because some observations had ambiguous results and
+did not fit the case criteria. }}
+
+The correlation between AwakeInBed and TotalMinutesAsleep is -0.1385993
+or -0.14, which is considered a weak negative correlation. It is not
+correlated enough to infer a strong relationship between those two
+variables. {[}go to Figure 6{]}
+
+On average, it takes users 38.83 minutes to fall asleep. That is higher
+than the healthy recommended level of 10 to 20 minutes
+\href{https://www.healthline.com/health/healthy-sleep/how-long-does-it-take-to-fall-asleep\#:~:text=It\%20should\%20take\%20between\%2010,fall\%20asleep\%20much\%20more\%20quickly}{4}.
+Users are having a harder time falling asleep. This could be due to
+other factors such as screen time before bed, stress, user's health or
+medical records, etc.
+
+\hypertarget{share}{%
+\section{Share}\label{share}}
+
+Using data visualization to show trends and relationships amongst
+variables.
+
+Aims to answer:
+
+\begin{itemize}
+\tightlist
+\item
+  Does regular physical activity lead to better sleep?
+\item
+  How does being active vs being sedentary impact my sleeping schedule?
+  Is there a relationship between sleep and activeness?
+\item
+  Do users spend a considerable amount of time being sedentary?
+\item
+  How does this translate in terms of improving Bellabeat?
+\end{itemize}
+
+\hypertarget{code-2}{%
+\subsection{Code}\label{code-2}}
+
+\hypertarget{loading-package}{%
+\subsubsection{Loading Package}\label{loading-package}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Visualization{-} look at relationship b/w total steps and calories}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 4.1.3
+\end{verbatim}
+
+\hypertarget{visualizing-data}{%
+\subsubsection{Visualizing Data}\label{visualizing-data}}
+
+\hypertarget{figure-1-number-of-observations-by-activity-level-mins.}{%
+\paragraph{Figure 1: Number of Observations by Activity Level
+(Mins.)}\label{figure-1-number-of-observations-by-activity-level-mins.}}
+
+\textbf{Who is our target audience (the highest number of users) based
+on activity level (Minutes)?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ sleep\_activity\_mins, }\FunctionTok{aes}\NormalTok{(ActivityLevelMins)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_bar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ ActivityLevelMins)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_text}\NormalTok{(}\AttributeTok{stat =} \StringTok{\textquotesingle{}count\textquotesingle{}}\NormalTok{, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{label =}\NormalTok{ ..count..), }\AttributeTok{vjust =}  \SpecialCharTok{{-}}\FloatTok{0.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{\textquotesingle{}Number of Observations by Activity Level (Mins)\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Bellabeat-Data-Analysis-with-R_files/figure-latex/ggplot-1.pdf}
+
+Most observations are from users that spend the most time being inactive
+or sedentary (i.e.~sitting, lying down) and lightly active
+(i.e.~standing, doing household chores, walking).
+
+These are users that wear and use Bellabeat products the most. If the
+marketing team wants to bring in more users, they can target these niche
+audiences.
+
+\hypertarget{figure-2-total-active-minutes-vs.-calories-by-activity-level-steps}{%
+\paragraph{Figure 2: Total Active Minutes vs.~Calories by Activity Level
+(Steps)}\label{figure-2-total-active-minutes-vs.-calories-by-activity-level-steps}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Total Active Minutes vs Calories by Activity Level (Steps)}
+\FunctionTok{ggplot}\NormalTok{(sleep\_steps, }\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}
+  \AttributeTok{x =}\NormalTok{ TotalActiveMinutes, }\AttributeTok{y =}\NormalTok{ Calories, }\AttributeTok{fill =}\NormalTok{ StepsActivityLevel, }\AttributeTok{color =}\NormalTok{ StepsActivityLevel)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Total Active Minutes vs Calories by Activity Level (Steps)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Bellabeat-Data-Analysis-with-R_files/figure-latex/unnamed-chunk-18-1.pdf}
+
+This graph looks at the total active minutes (Sedentary Minutes +
+LightlyActiveMinutes + FairlyActiveMinutes + VeryActiveMinutes) and the
+calories burned at each activity level.
+
+There is a positive relationship between TotalActiveMinutes and
+Calories. The more time users are active, the more calories users burn.
+The activity level data is consistent with this analysis. Users who are
+very active spend the most time being active and burn the most calories
+per day; users who are inactive spend most of their time being sedentary
+and burn the least calories per day.
+
+\hypertarget{figure-3-percentage-of-sleep-sufficient-observations}{%
+\paragraph{Figure 3: Percentage of Sleep Sufficient
+Observations}\label{figure-3-percentage-of-sleep-sufficient-observations}}
+
+\textbf{Are users getting enough sleep?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#creating a df to get an aggregate of observations (n) and the percentage for sleep sufficiency}
+\NormalTok{pie\_chart }\OtherTok{\textless{}{-}}\NormalTok{ sleep\_steps }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{group\_by}\NormalTok{(SleepSufficiency) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{count}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ungroup}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{percent =}\NormalTok{ n }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(n)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{arrange}\NormalTok{(percent) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{labels =}\NormalTok{ scales}\SpecialCharTok{::}\FunctionTok{percent}\NormalTok{(percent))}
+
+\CommentTok{\#making a pie chart with annotations}
+\FunctionTok{ggplot}\NormalTok{(pie\_chart, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \StringTok{""}\NormalTok{, }\AttributeTok{y =}\NormalTok{ percent, }\AttributeTok{fill =}\NormalTok{ SleepSufficiency)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_col}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{geom\_label}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{label =}\NormalTok{ labels), }\AttributeTok{position =} \FunctionTok{position\_stack}\NormalTok{(}\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{), }\AttributeTok{show.legend =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_text}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{label =}\NormalTok{ labels), }\AttributeTok{position =} \FunctionTok{position\_stack}\NormalTok{(}\AttributeTok{vjust =} \FloatTok{0.5}\NormalTok{), }\AttributeTok{show.legend =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{coord\_polar}\NormalTok{(}\AttributeTok{theta =} \StringTok{"y"}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{theme\_void}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Percentage of Sleep Sufficient Observations"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Bellabeat-Data-Analysis-with-R_files/figure-latex/unnamed-chunk-19-1.pdf}
+
+This visualization is consistent with our previous analysis. More than
+half of the users (56\%) get enough sleep, meaning at least 420 minutes
+or 7 hours a day.
+
+\hypertarget{figure-4-comparing-user-sleep-sufficient-observations-by-activity-level-minutes}{%
+\paragraph{Figure 4: Comparing User Sleep Sufficient Observations by
+Activity Level
+(Minutes)}\label{figure-4-comparing-user-sleep-sufficient-observations-by-activity-level-minutes}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sleep\_activity\_mins }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{group\_by}\NormalTok{(SleepSufficiency) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{count}\NormalTok{(ActivityLevelMins) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(sleep\_activity2, }\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ ActivityLevelMins, }\AttributeTok{y =}\NormalTok{ n)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_bar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ SleepSufficiency), }
+           \AttributeTok{stat =} \StringTok{"identity"}\NormalTok{, }\AttributeTok{color =} \StringTok{"white"}\NormalTok{, }
+           \AttributeTok{position =} \FunctionTok{position\_dodge}\NormalTok{(}\FloatTok{0.9}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Comparing User Sleep Sufficient Observations by Activity Level (Mins)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Bellabeat-Data-Analysis-with-R_files/figure-latex/unnamed-chunk-20-1.pdf}
+
+There is a clear trend; As user activity level decreases, users are less
+likely to get sufficient sleep (at least 420 minutes or 7 hours a
+night).
+
+Poor sleep may contribute to physical inactivity
+\href{https://journals.sagepub.com/doi/abs/10.1177/1559827614544437}{5}.
+The group that are least likely to get enough sleep is the sedentary
+group. While many sedentary users have enough sleep, there is still a
+high number of `Not Enough' sleep observations compared to other
+activity levels.
+
+\hypertarget{figure-5-sedentary-minutes-vs.-total-minutes-asleep}{%
+\paragraph{Figure 5: Sedentary Minutes vs.~Total Minutes
+Asleep}\label{figure-5-sedentary-minutes-vs.-total-minutes-asleep}}
+
+\textbf{How does being sedentary impact sleep?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(sleep\_activity\_cleaned, }\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ SedentaryMinutes, }\AttributeTok{y =}\NormalTok{ TotalMinutesAsleep)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+} \FunctionTok{geom\_smooth}\NormalTok{() }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Sedentary Minutes vs Total Minutes Asleep"}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+\end{verbatim}
+
+\includegraphics{Bellabeat-Data-Analysis-with-R_files/figure-latex/unnamed-chunk-21-1.pdf}
+
+It is evident that there is a negative relationship between
+Sedentaryminutes and TotalMinutesAsleep. The more users stay sedentary,
+the fewer users sleep.
+
+This can be concerning for the user's health because Bellabeat users
+spend a lot of time sedent (on average, 571.6 minutes or 9.52 hours a
+day). Inactiveness can be strongly associated with insomnia and
+restlessness. Increasing exercise or physical activity can improve sleep
+duration and alertness in the daytime
+\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352043/}{6}.
+
+In this study, researchers examined the association between sedentary
+behaviours and sleep time and found that physical activity increased
+with sleep duration in younger respondents (aged 20-39)
+\href{https://www.sciencedirect.com/science/article/abs/pii/S0091743514002035\%20→\%20physical\%20activity\%20and\%20sleep\%20duration}{7}.
+
+\hypertarget{figure-6-awakeinbed-vs.-totalminutesasleep}{%
+\paragraph{Figure 6: AwakeInBed
+vs.~TotalMinutesAsleep}\label{figure-6-awakeinbed-vs.-totalminutesasleep}}
+
+\textbf{How does being awake in bed relate to sleep?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ sleep\_activity\_mins, }\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ AwakeInBed, }\AttributeTok{y =}\NormalTok{ TotalMinutesAsleep)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+} 
+  \FunctionTok{geom\_smooth}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Awake in Bed (Mins) vs Total Minutes Asleep"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+\end{verbatim}
+
+\includegraphics{Bellabeat-Data-Analysis-with-R_files/figure-latex/unnamed-chunk-22-1.pdf}
+
+This graph shows a decreasing concavity, showing a negative relationship
+between AwakeInBed and TotalMinutesAsleep. The longer users stay awake
+in bed, the fewer users sleep. The correlation between these two
+variables shows a weak relationship.
+
+\hypertarget{act}{%
+\section{Act}\label{act}}
+
+\hypertarget{limitations-1}{%
+\subsection{Limitations}\label{limitations-1}}
+
+If the dataset included demographic data, we can analyze the differences
+in sleep and activity by age. Age can affect sleep and activity, so
+having that extra data can provide more additional and insightful
+analysis.
+
+\hypertarget{key-findings}{%
+\subsection{Key Findings}\label{key-findings}}
+
+\begin{itemize}
+\tightlist
+\item
+  On average, users stay sedentary for 717 minutes per day.
+\item
+  On average, users take 8541 steps per day which are lower than
+  recommended (10k steps/day).
+\item
+  21\% of users are active and take at least 10,000 steps per day.
+\item
+  21\% of users are inactive and take less than 5,000 steps per day.
+\item
+  On average, users sleep for 377.6 minutes per night.
+\item
+  50\% of users get at least 420 minutes of sleep per night.
+\item
+  There is a strong negative correlation between SedentaryMinutes and
+  TotalMinutesAsleep.
+\item
+  On average, it takes users 38.83 minutes to fall asleep.
+\item
+  Most of the users are between inactive and lightly active.
+\item
+  The more time users stay active, the more calories they burn.
+\item
+  More than half of the users (56\%) get sufficient sleep (at least 420
+  minutes).
+\item
+  As user activity level decreases, users are less likely to get
+  sufficient sleep.
+\item
+  The longer users stay awake in bed, the fewer users sleep.
+\end{itemize}
+
+\hypertarget{recommendations}{%
+\subsection{Recommendations}\label{recommendations}}
+
+\hypertarget{upgrades}{%
+\subsubsection{Upgrades}\label{upgrades}}
+
+==\textgreater{} \textbf{Improve machine learning.}
+
+\begin{itemize}
+\tightlist
+\item
+  Continue to improve on collecting accurate data to encourage users to
+  wear their Bellabeat tracker more and take control of their own
+  fitness and health journey.
+\end{itemize}
+
+==\textgreater{} \textbf{Improve wearability}
+
+\begin{itemize}
+\tightlist
+\item
+  Ensure the Bellabeat tracker is comfortable while staying trendy to
+  wear for users to encourage logging participation.
+\end{itemize}
+
+\hypertarget{new-features}{%
+\subsubsection{New Features}\label{new-features}}
+
+==\textgreater{} \textbf{Allow users to set up a wake-up and sleep buzz
+alert.}
+
+\begin{itemize}
+\tightlist
+\item
+  Sending a reminder for bedtime will encourage more sleep by reducing
+  screen time. According to a poll, ``95\% of people said they regularly
+  use some type of electronics within an hour of bedtime.''
+  \href{https://www.sleepfoundation.org/bedroom-environment/technology-in-the-bedroom}{8}
+  We can get lost in our electronics at night before bed and feel not
+  tired because we're stimulated.
+\end{itemize}
+
+==\textgreater{} \textbf{Meditation, breathing, and other mindful
+exercises.}
+
+\begin{itemize}
+\tightlist
+\item
+  Meditation and breathing exercises can improve the quality of your
+  sleep. It can help users who are sleeping less or have trouble
+  sleeping relax and bring calmness
+  \href{https://www.sleepfoundation.org/insomnia/treatment/meditation}{9}.
+  This new feature in the Time Watch will incorporate guided breathing
+  exercises that users can pick from throughout the day.
+\end{itemize}
+
+\hypertarget{user-growth}{%
+\paragraph{User Growth}\label{user-growth}}
+
+==\textgreater{} \textbf{Connect to users' medical records.}
+
+\begin{itemize}
+\tightlist
+\item
+  Bellabeat can personalize each user's health journey by connecting to
+  their medical records. That way, doctors or providers can better track
+  your health and self-manage their health. Bellabeat can expand in the
+  healthcare industry by working with healthcare insurance companies to
+  use Bellabeat for patients that need regular fitness tracking
+  \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6746089/}{10}.
+\end{itemize}
+
+==\textgreater{} \textbf{Rewards point system.}
+
+\begin{itemize}
+\tightlist
+\item
+  Bellabeat can create a rewards point system for unlocking
+  achievements, upholding streaks, or even completing a fun fitness
+  challenge. As users gather points, they can trade them in for rewards
+  such as free workout programs, deals with active equipment, and much
+  more.
+\end{itemize}
+
+\hypertarget{next-up}{%
+\subsection{Next Up\ldots{}}\label{next-up}}
+
+There is additional data in the dataset to analyze to provide more
+extensive insights such as users' logs on weight, intensities, heart
+rate, and METs.
+
+\hypertarget{sources}{%
+\section{Sources}\label{sources}}
+
+{[}1{]}
+\href{https://www.medicinenet.com/how_many_steps_a_day_is_considered_active/article.htm}{How
+Many Steps a Day Is Considered Active?}
+
+{[}2{]}
+\href{https://www.sleepfoundation.org/sleep-hygiene/what-is-healthy-sleep}{Healthy
+Sleep: What Is It and Are You Getting It?}
+
+{[}3{]}
+\href{https://ijbnpa.biomedcentral.com/articles/10.1186/1479-5868-8-79\#:~:text=In\%20summary\%2C\%20at\%20least\%20in,populace\%20\%5B3\%2C\%2023\%5D}{How
+many steps/day are enough? for adults - International Journal of
+Behavioral Nutrition and Physical Activity}
+
+{[}4{]}
+\href{https://www.healthline.com/health/healthy-sleep/how-long-does-it-take-to-fall-asleep\#:~:text=It\%20should\%20take\%20between\%2010,fall\%20asleep\%20much\%20more\%20quickly}{How
+Long Does It Take to Fall Asleep? Average Time and Tips}
+
+{[}5{]}
+\href{https://journals.sagepub.com/doi/abs/10.1177/1559827614544437}{Bidirectional
+Relationship Between Exercise and Sleep: Implications for Exercise
+Adherence and Sleep Improvement - Christopher E. Kline, 2014}
+
+{[}6{]} \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352043/}{Are
+Sedentary Behaviors Associated with Sleep Duration? A Cross-Sectional
+Case from Croatia}
+
+{[}7{]}
+\href{https://www.sciencedirect.com/science/article/abs/pii/S0091743514002035}{Associations
+between physical activity, sedentary time, sleep duration and daytime
+sleepiness in US adults}
+
+{[}8{]}
+\href{https://www.sleepfoundation.org/bedroom-environment/technology-in-the-bedroom}{Technology
+in the Bedroom}
+
+{[}9{]}
+\href{https://www.sleepfoundation.org/insomnia/treatment/meditation}{Can
+Meditation Treat Insomnia}
+
+{[}10{]}
+\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6746089/}{Wearable
+Health Technology and Electronic Health Record Integration: Scoping
+Review and Future Directions}
+
+\end{document}
